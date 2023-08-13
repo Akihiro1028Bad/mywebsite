@@ -1,0 +1,228 @@
+/*
+Theme Name: tutu_web_site
+Author: Akihiro TsuTsumi
+Description: このwebサイトは堤暁寛のwebサイトです
+Version: 1.0
+*/
+
+/* Sample CSS content */
+body {
+    font-family:'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* ▼ヘッダー大枠 */
+header {
+    background-color: white;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* -----------------ヘッダー！！！！！！------------------------------ */
+/* ▼ヘッダーの中のdiv */
+.header{
+    width:1000px ;
+    height:265px ;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    position: relative;   /* 親要素に相対的な位置を設定 */
+    
+}
+
+h1{
+    display: inline-block;
+    position: absolute;
+    top: 40%;           
+    left: 0;  
+}
+
+.header nav {
+    display: flex;
+    position: absolute;  /* nav要素に絶対的な位置を設定 */
+    bottom: 0;           /* 親要素の下端に配置 */
+    right: 0;  /* 親要素の左端に配置 */
+}
+
+.header nav a{
+    color:#333333;
+    font-size: 25px;
+    
+}
+
+.header nav a:hover{
+    color: #000;
+    text-decoration:underline;
+}
+
+.header_nav{
+    display:flex;
+    list-style-type: none;  /* マーカー（点）を非表示にする */
+    padding: 0; 
+    
+}
+
+.header_nav_contant{
+    margin-right: 20px;
+    border-right:2px solid #333333;
+    padding-right: 15px;
+    
+}
+
+.header_nav_contant:first-child {
+
+    border-left: 2px solid #333333;  /* 2pxの太さ、実線、黒色の線 */
+    padding-left: 15px;
+}
+
+.insta_Logo{
+    display: inline-block;
+    position: absolute;
+    top: 40%;           
+    right: 10PX;  
+}
+
+
+/* ------------------ヘッダー終わり！！！！！-------------------------------- */
+
+/* ---------------------メインここから！！！！！！-------------------------------- */
+
+
+/* メインvisual大枠 */
+.main_visual {
+    display: flex;
+    justify-content: center;  /* 横方向の中央寄せ */
+    overflow: hidden;         /* オーバーフローした内容を非表示にする */
+    margin-bottom: 20px;
+}
+
+
+.main_visual_img {
+
+    max-width: 100%;          /* 画像がコンテナより大きい場合は縮小する */
+    height: auto;             /* 縦の高さは自動的に調整する */
+    
+}
+
+.Servis{
+    text-align: center;
+    height: 696px;
+}
+
+.Service_Content{
+    display:inline-block;
+    width: 920px;
+    height: 450px;
+    text-align: center;
+}
+
+.Servis h2{
+    display:inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.0px;
+    color:#333333;
+    letter-spacing: 0.05em;
+    
+}
+
+.Servis h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color:#505050;   
+}
+
+.Servis h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #a5a5a5;
+    letter-spacing: 0.1em;
+}
+
+.Servis li p{
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #333333;
+}
+
+.Service_section ul {
+    display: flex;
+    justify-content: space-between; /* 各要素間のスペースを均等にする */
+    list-style: none;               /* リストマーカーを非表示にする */
+    padding: 0;                     /* パディングをリセットする */
+}
+
+.Service_Content {
+    flex: 1;                        /* 各要素がコンテナのスペースを均等に使用するようにする */
+    margin: 0 10px;                 /* 各要素の間にマージンを追加する */
+    box-sizing: border-box;         /* パディングとボーダーが要素の全幅/全高に含まれるようにする */
+}
+
+
+/* -------------------------メインここまで！！！！！！----------------------------------- */
+/* footerの基本的なスタイリング */
+/* fotterの基本的なスタイリング */
+footer{
+    text-align: center;
+}
+
+.fotter {
+    position: relative;  /* 子要素のpositionを相対的に配置するための基準となる */
+    width: 1000px;         /* fotterの幅を親要素に合わせる */
+    height: auto;        /* 高さは内容に応じて自動調整 */
+    padding: 20px;       /* 内部の余白を設定 */
+    display: inline-block;
+}
+
+/* nav要素をfotterの左下に配置 */
+.fotter nav {
+    position: absolute;  /* 絶対位置を指定 */
+    left: 0;             /* fotterの左端に合わせる */
+    bottom: 0;           /* fotterの下端に合わせる */
+}
+
+/* li要素を横並びに配置 */
+.fotter_nav {
+    list-style-type: none;  /* リストのマーカー（点）を非表示にする */
+    padding: 0;             /* パディングをリセット */
+    margin: 0;              /* マージンをリセット */
+    display: flex;          /* フレックスボックスを使用して要素を横並びにする */
+}
+
+.fotter_nav_contant {
+    margin-right: 20px;  /* 各項目の間にスペースを追加 */
+}
+
+.fotter_nav_contant:last-child {
+    margin-right: 0;     /* 最後の項目の右マージンを0に設定 */
+}
+
+.fotter_nav_contant a{
+    font-family: 'Lato', sans-serif;
+    font-family: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #333333;
+}
+
+.fotter_nav_contant a:hover{
+    text-decoration: underline;
+}
+
+
+
+
